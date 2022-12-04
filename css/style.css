@@ -102,10 +102,13 @@ input:focus{
     width: 250px;
 } 
 #todo_form button:last-child{
+    background-color: rgba(255, 255, 255, 1);
     font-size: 22px;
-    width: 48px;
-    height: 48px;
+    line-height: 38px;
+    width: 38px;
+    height: 38px;
     border: none;
+    margin: auto 0;
     position: absolute;
     right: 10px;
     top: 0;
