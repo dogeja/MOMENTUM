@@ -110,7 +110,6 @@ input:focus{
     right: 10px;
     top: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.1) ;
 }
 /* 투두리스트*/
 .list_wrap{
