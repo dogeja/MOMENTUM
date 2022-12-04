@@ -9,13 +9,14 @@ function keyDownBtn(e){
     let x = parseInt(submitList.style.right || 0,0);
     let x2= parseInt(bar.style.right || 0,0);
     let x3= parseInt(bar2.style.right || 0,0);
+    const handled = false;
     const keyCode=e.keyCode;
     if (keyCode>=65 && keyCode<=90 ||keyCode>=49&&keyCode<=57||keyCode==229){
         ranTypeBtn.classList.toggle("pressed");
         submitList.style.right = x + 8 +"px";
         bar.style.right = x2 + 8 +"px";
         bar2.style.right = x3 + 8 +"px";
-    }else if(keyCode==8){
+    }else if(keyCode==8&&x>=0){
         submitList.style.right = x - 8 +"px";
         bar.style.right = x2 - 8 +"px";
         bar2.style.right = x3 - 8 +"px";
