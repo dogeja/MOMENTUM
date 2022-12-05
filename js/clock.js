@@ -27,10 +27,10 @@ function getClock(){
     if(hours>=6 && hours<11){
         lightingdaytime.classList.remove("night");
         lightingdaytime.classList.add("morning");
-    }else if(hours>=11 && hours<5){
+    }else if(hours>=11 && hours<16){
         lightingdaytime.classList.remove("morning");
         lightingdaytime.classList.add("day");
-    }else if(hours>=5 && hours<8){
+    }else if(hours>=16 && hours<20){
         lightingdaytime.classList.remove("day");
         lightingdaytime.classList.add("noon");
 
