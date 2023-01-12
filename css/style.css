@@ -54,7 +54,6 @@ input:focus {
 }
 
 #typer {
-  left: 50%;
   display: flex;
   flex-direction: column;
   min-height: 48px;
@@ -129,7 +128,7 @@ input:focus {
   margin: 0 auto;
   position: absolute;
   font-size: 18px;
-  left: 0;
+  left: 0px;
   right: 0;
   bottom: 0px;
   min-height: 24px;
@@ -411,4 +410,122 @@ h1 {
   transform: translateY(7px);
   transform: scale(0.85);
   opacity: 0.7;
+}
+@media (max-width: 1500px) {
+  .imgset > img:first-child {
+    position: absolute;
+    left: 1%;
+    top: 325px;
+    transform: rotateZ(15deg);
+  }
+  .imgset > img:nth-child(2) {
+    position: absolute;
+    left: 1%;
+    top: 500px;
+    transform: rotateY(180deg);
+  }
+  .imgset > img:nth-child(3) {
+    position: absolute;
+    right: 0%;
+    top: 24%;
+  }
+  .imgset > img:last-child {
+    left: 1%;
+  }
+  #quote {
+    width: 300px;
+    text-align: end;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  #clock {
+    transform: scale(0.85);
+  }
+}
+@media (max-width: 580px) {
+  body {
+    overflow-x: hidden;
+  }
+  .listpart {
+    left: -305px;
+  }
+
+  #todo_list {
+    left: -235px;
+  }
+
+  .listpart2 {
+    left: -235px;
+  }
+  #todo_form {
+    left: -75px;
+  }
+  .infomation {
+    width: 100%;
+  }
+  #clock {
+    background-image: url(../image/clock.png);
+    width: 150px;
+    height: 120px;
+    z-index: 4000;
+    color: white;
+    font-size: 19px;
+    position: absolute;
+    text-align: center;
+    line-height: 180px;
+    position: relative;
+    right: 0px;
+    transform: rotateX(7deg);
+    transform: perspective(10);
+    font-family: "Press Start 2P", cursive;
+    transform: scale(0.7);
+  }
+  #weather {
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    right: 2rem;
+    top: 110px;
+  }
+
+  #quote {
+    width: 250px;
+    text-align: end;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .imgset > img:first-child {
+    position: absolute;
+    left: 1%;
+    top: 155px;
+    transform: scale(0.8);
+
+    transform: rotateZ(15deg);
+  }
+  .imgset > img:nth-child(2) {
+    position: absolute;
+    left: 22%;
+    top: 195px;
+    transform: scale(0.8);
+
+    transform: rotateY(180deg);
+  }
+  .imgset > img:nth-child(3) {
+    position: absolute;
+    right: 0%;
+    top: 21%;
+    transform: scale(0.85);
+  }
+  .imgset > img:last-child {
+    left: 1%;
+    top: 155px;
+    transform: scale(0.8);
+  }
+  #login_form {
+    display: none;
+    width: 100px;
+  }
+  #login_form input {
+    width: 120px;
+  }
 }
