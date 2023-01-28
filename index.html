@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMENTUM</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animated.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Press+Start+2P&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="icon" href="./image/logo.ico">
+    
+</head>
+<body>
+<div class="transition"></div>
+<div class="mv_wrap">
+    <!-- header -->
+    <div class="header_wrap">
+        <div class="header">
+                <form id="login_form" class="hidden">
+                    <input autofocus required maxlength="12" type="text" placeholder="What is your name?">
+                </form>
+                <h1 id="greeting" class="hidden"></h1>
+                <div class="infomation">
+                    <div id="clock">00:00:00</div>
+                    <div id="weather">
+                        <span></span><br>
+                        <span></span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- main_section -->
+        <section class="mv">
+            <div class="listpart_wrap">
+                <div class="listpart"></div>
+                <div class="listpart2"></div>
+            </div>
+            
+            <div class="list_wrap">
+                <div>
+                    
+                    <ul id="todo_list">
+                        <div class="paper"></div>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="typer">
+                <div class="part">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="todo_wrap">
+                    <form id="todo_form">
+                        <input maxlength="12" type="text" required  placeholder="Write a To Do List">
+                        
+                        
+                    </form>
+                    <ul id="todo_list"></ul>
+                    <!-- border로 외곽선 주고 아래만 none주기
+                    li추가되면서 올라올거니깐 -->
+                </div>
+                
+                <div class="type_btn_wrap">
+                    <div></div>
+                    <div class="first_line">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="second_line">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="third_line">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="enter"></div>
+                </div>
+            </div>
+            <div class="etc_wrap">
+                <!-- <img src="#" alt="#"> coffee img here -->
+                <div id="music">
+                    <div class="btn_wrap">
+                        <div class="screen">
+                            <button class="play mBtn">
+                            <img src="./image/play.png" alt="playMusicBtn">
+                        </button>
+                        <button class="stop hidden mBtn">
+                            <img src="./image/play-pause.png" alt="stopMusicBtn">
+                        </button>
+                    </div>
+                </div>
+                    <!-- 손그림으로 이미지 넣기 -->
+                    <audio id="audio_player" hidden loop>
+                        <source src="./music/moonshine-prigida-main-version-01-36-17027.mp3" type="audio/mp3">
+                        
+                    </audio>
+                </video>
+                    
+                </div>
+                <div id="quote">
+                    <span></span> <br>
+                    <span></span>
+                </div>
+               
+            </div>
+            <div class="imgset">
+                <img src="./image/notepad.png" alt="notepad">
+                <img src="./image/pen.png" alt="pen">
+                <img src="./image/cup.png" alt="cup">
+            </div>
+        </section>
+    </div>
+    <div class="daystatus"></div>
+    <script src="./js/app.js"></script>
+    <script src="./js/greeting.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/bgimg.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/action.js"></script>
+    <!-- <a href="https://nomadcoders.co">Go to courses</a> -->
+</body>
+</html>
